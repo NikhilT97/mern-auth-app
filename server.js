@@ -12,7 +12,7 @@ PORT = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:5174",
+    origin: "https://my-auth-app-delta-lac.vercel.app",
     credentials: true,
   }),
 );
