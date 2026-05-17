@@ -5,10 +5,20 @@ const connectDB = require("./config/config");
 const userRouter = require("./routes/auth.routes");
 const authMiddleware = require("./middleware/auth.middleware");
 const app = express();
+const cors = require("cors");
+
 require("dotenv").config();
-PORT = process.env.PORT || 4000;
+PORT = process.env.PORT || 5000;
+
+app.use(
+  cors({
+    origin: "http://localhost:5174",
+    credentials: true,
+  }),
+);
 
 app.use(express.json());
+
 app.use("/users", userRouter);
 
 app.listen(PORT, () => {
