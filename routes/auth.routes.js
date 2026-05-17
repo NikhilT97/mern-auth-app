@@ -66,4 +66,8 @@ userRouter.get("/profile", authMiddleware, async (req, res) => {
   }
 });
 
+userRouter.get("/", (req, res) => {
+  res.send("MERN Auth API is running");
+});
+
 module.exports = userRouter;
