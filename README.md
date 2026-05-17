@@ -1,3 +1,5 @@
+deployed frontend - https://my-auth-app-delta-lac.vercel.app/
+deployed backend - https://mern-auth-app-1-3cwf.onrender.com/users/signup
 # mern-auth-app
 
 what the project does?
